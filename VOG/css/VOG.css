@@ -1,0 +1,208 @@
+﻿* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+    font-weight:400;
+}
+::-webkit-scrollbar:vertical{
+    display:none;
+}
+
+::-webkit-scrollbar{
+    height:10px;
+}
+::-webkit-scrollbar-track:horizontal {
+   -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+   border-radius: 8px;
+   background: repeating-linear-gradient(
+      45deg,
+      rgba(8, 129, 194,0.2),
+      rgba(8, 129, 194,0.2) 2px,
+      rgba(8, 129, 194,0.2) 2px,
+      rgba(8, 129, 194,0.3) 4px
+    );
+}
+ 
+::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+    background-color:rgba(243, 115, 42,0.6);
+}
+body{
+    min-width:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-y: hidden;
+}
+
+#defaultMainBody{
+    display:block;
+    position:relative;
+    margin:0;
+    padding:0;
+    min-width:769px;
+    max-width:1600px;
+    width:100%;
+}
+#defaultMainBody section{
+    display:block;
+    position:relative;
+    margin:5px;
+    padding:0;
+    background-color:white;
+    min-height:50px;
+
+}
+.vogSearch{
+    vertical-align: bottom;
+}
+#searchCreateBlock{
+     box-shadow: 0px 0px 1px #4C5457;
+}
+
+.postCard{
+    position:absolute;
+    left:10px;
+    top:5px;
+}
+.searchControl{
+    position:absolute;
+    right:10px;
+    top:5px;
+    float:right;
+    line-height:25px;
+}
+
+#queueBlock{
+    display:block;
+    position:relative;
+    margin:0;
+    padding:0;
+}
+
+.subQueue{
+    display:block;
+    position:relative;
+    margin:0;
+    padding:2px;
+    background-color:#e6e6e6;
+    
+}
+
+.queueHeader{
+    padding-left:5px;
+    
+}
+.subTitle{
+    font-weight:500;
+}
+.viewAll{
+    position:absolute;
+    right:5px;
+    top:5px;
+    font-size:0.8em;
+    text-decoration:underline;
+
+}
+.viewAll:hover{
+    color:rgba(243, 115, 42,0.8);
+    font-size:1em;
+}
+.queueContainer{
+    display:block;
+    height:auto;
+}
+
+.queueList{
+    position:relative;
+    list-style-type:none;
+    white-space:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden; 
+}
+
+.queueListItem{
+    display:inline-block;
+    position:relative;
+    margin:5px;
+    padding:0;
+    box-shadow: 0px 0px 1px #4C5457;
+}
+
+
+.cardFrame {
+    width: inherit;
+    height: inherit;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+     z-index:10;
+
+}
+
+.cardFrame .front, .cardFrame .back {
+    display: block;
+    position:absolute;
+    height:100%;
+    width:100%;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility:hidden;
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    z-index:10;
+    background-color: rgba(8, 129, 194,0.6);
+}
+
+.cardFrame .back { 
+    z-index:0;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+    text-align:center;
+}
+
+.cardFrame.flipped .front {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+    z-index:0;
+}
+.cardFrame.flipped .back {
+    -webkit-transform: rotateY( 360deg );
+    -moz-transform: rotateY( 360deg );
+    transform: rotateY( 360deg );
+    z-index:10;
+}
+.cardIcon:hover{
+    cursor:pointer;
+
+}
+
+.vogCommentBox{
+    display:block;
+    position:relative;
+    margin: 5px 5px;
+    min-width: 380px;
+	width:380px;
+	min-height: 150px;
+	height: 150px;
+}
+.vogCommentButton{
+    display:block;
+    position:relative;
+    width:100px;
+    height:25px;
+    background-color:#f3732a;
+    border:none;
+    cursor: pointer;
+    margin:0px auto;
+}
