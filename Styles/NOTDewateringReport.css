@@ -1,0 +1,127 @@
+﻿#DewateringReport_DataEntryContainer{
+    display:inline-block;
+    position:relative;
+    margin: 0;
+    padding: 0;
+    min-width:1200px;
+    max-width:1200px;
+    width:1200px;
+    min-height:500px;
+    height:auto;
+    border:1px solid blue;
+}
+
+
+#DewateringReport_DataEntryContainer section {
+    display:block;
+    position:relative;
+    margin:0px;
+    padding:0px;
+    max-width:1200px;
+    width:100%;
+    border:1px solid red;
+
+}
+
+
+table.DewateringReportTable {
+
+    display:inline-block;
+    position:relative;
+    table-layout:fixed;
+    border-collapse:collapse;
+    border:1px solid black;
+}
+
+.DewateringDataForm{
+    display:inline-block;
+    margin:0;
+    padding:0;
+    min-width:100px;
+    font-size:0.75em;
+    box-shadow: 0px 0px 2px #4C5457;
+}
+
+.DewateringDataForm article {
+    display:block;      /** Will be none **/
+    position:relative; /** will be absolute **/
+    min-height:115px;
+    margin:0px;
+}
+
+#DryerUpOrDownForm table, #UpForm table, #DownForm table {
+    display:inline-block;
+    position:relative;
+    table-layout:fixed;
+    border-collapse:collapse;
+    box-shadow: 0px 0px 2px #4C5457;
+    background-color:white;
+}
+#DryerUpOrDownForm table{
+    max-width:110px;
+    width:110px;
+}
+#DryerUpOrDownForm table tbody tr:nth-child(3) td {
+    padding-left:20px;
+
+}
+#UpForm table tbody tr:nth-child(2) td:first-child,
+#UpForm table tbody tr:nth-child(4) td:first-child,
+#DownForm table tbody tr:nth-child(2) td:first-child,
+#DownForm table tbody tr:nth-child(4) td:first-child,
+#DownForm table tbody tr:nth-child(6) td:first-child{
+    max-width:100px;
+    width:100px;
+}
+#UpForm table tbody tr:nth-child(2) td:last-child,
+#UpForm table tbody tr:nth-child(4) td:last-child,
+#DownForm table tbody tr:nth-child(2) td:last-child,
+#DownForm table tbody tr:nth-child(4) td:last-child,
+#DownForm table tbody tr:nth-child(6) td:last-child{
+    max-width:75px;
+    width:75px;
+}
+
+#UpForm table tbody tr:nth-child(1),
+#DownForm table tbody tr:nth-child(1) {
+    padding-top:5px;
+    height:40px;
+}
+
+#UpForm table tbody tr:nth-child(3),
+#DownForm table tbody tr:nth-child(3),
+#DownForm table tbody tr:nth-child(5),
+#DownForm table tbody tr:nth-child(7){
+    border-top:1px solid #4C5457;
+    padding-top:5px;
+    height:40px;
+}
+#UpForm table tbody tr:last-child,
+#DownForm table tbody tr:last-child{
+    height:25px;
+}
+#UpForm table tbody tr:nth-child(2) td,
+#UpForm table tbody tr:nth-child(4) td,
+#DownForm table tbody tr:nth-child(2) td,
+#DownForm table tbody tr:nth-child(4) td,
+#DownForm table tbody tr:nth-child(6) td{
+    text-align:right;
+}
+
+
+#UpForm table tbody tr:last-child,
+#DownForm table tbody tr:last-child{
+    border-top:1px solid #4C5457;
+    padding-top:5px;
+    height:50px;
+    text-align:center;
+}
+.dewateringReportTextBox{
+    min-width:325px;
+    width:325px;
+    min-height:50px;
+    height:50px;
+}
+.dewateringFormButton{
+    margin:0px 5px;
+}
